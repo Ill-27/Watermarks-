@@ -35,14 +35,14 @@
         const ctx = canvas.getContext('2d');
         
         // Твои коды-водяные знаки
-        const words = ["artanat.com", "Artanat", "artanat", "Dante Sogliano"];
+        const words = ["artanat.com", "Artanat", "artanat"];
         let drops = [];
 
         function initDrops() {
             drops = [];
             
             // 1. РАССТОЯНИЕ МЕЖДУ СТОЛБЦАМИ (чем меньше цифры, тем плотнее столбцы)
-            const spacing = window.innerWidth < 768 ? 30 : 40; 
+            const spacing = window.innerWidth < 768 ? 40 : 50; 
             const columns = Math.floor(window.innerWidth / spacing);
 
             // 2. ГУСТОТА (СЛОИ)
